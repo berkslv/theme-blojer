@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blojer</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- Search start -->
+    <section id="search-section" class="w-screen px-32 overflow-hidden bg-gray-600 flex justify-center items-center">
+        <div class="relative rounded-md p-10 m-4 bg-gray-200 text-center">
+            <button class="absolute top-4 left-4 hover:text-gray-500" id="search-btn-cancel">
+                <!-- Times ( x ) icon start -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                <!-- Times ( x ) icon end -->
+            </button>
+            <h1 class="font-semibold text-lg">Search</h1>
+            <input type="text" placeholder="Search something" class="mt-5 mx-2 px-8 py-3 rounded-md bg-white">
+            <button class="px-8 py-3 mt-5 mx-2 bg-indigo-600 text-indigo-100 rounded-md">Go!</button>
+        </div>
+    </section>
+    <!-- Search end -->
+
+
+    <!-- Nav start -->
+    <nav id="main-nav"
+        class="relative overflow-hidden w-screen bg-indigo-900 flex justify-between md:items-center items-start md:pt-0 pt-7 md:px-20 px-10">
+        <!-- Navbar trade start -->
+        <div class="font-bold md:text-2xl text-xl text-white hover:text-gray-200 hover:underline">
+            <a href="#">
+                Berk Selvi
+            </a>
+        </div>
+        <!-- Navbar trade end -->
+        <!-- Main navbar menu start -->
+        <ul class="absolute top-20 md:static md:flex md:flex-row">
+            <li class="md:px-3 px-2 md:py-0 py-3 text-xl text-red-300 hover:text-red-400">
+                <a href="./index.html">
+                    Articles
+                </a>
+            </li>
+            <li class="md:px-3 px-2 md:py-0 py-3 text-xl text-red-300 hover:text-red-400">
+                <a href="./personal.html">
+                    Personal
+                </a>
+            </li>
+            <li
+                class="md:px-3 px-2 md:text-xl text-lg text-red-300 hover:text-red-600 rounded-full md:flex hidden justify-center items-center">
+                <a href="#" id="search-btn-1">
+                    <!-- Search icon start -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <!-- Search icon end -->
+                </a>
+            </li>
+        </ul>
+        <!-- Main navbar menu end -->
+
+        <!-- Mobile - responsive navbar menu start -->
+        <ul class="flex flex-row md:hidden">
+            <li
+                class="px-4 md:text-xl text-lg text-red-300 hover:text-red-600 rounded-full flex justify-center items-center">
+                <a href="#" id="search-btn-2">
+                    <!-- Search icon start -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <!-- Search icon end -->
+                </a>
+            </li>
+            <li
+                class="px-4 md:text-xl text-lg text-red-300 hover:text-red-600 rounded-full flex justify-center items-center">
+                <butotn id="menu-button">
+                    <!-- Menu icon start -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <!-- Menu icon end -->
+                </butotn>
+            </li>
+        </ul>
+        <!-- Mobile - responsive navbar menu end -->
+    </nav>
+    <!-- Nav end -->
+
+    <!-- Header start -->
+    <section class="w-full bg-indigo-900">
+        <div class="md:py-20 py-12 mx-auto blog-post">
+            <div class="text-center w-full">
+                <!-- Title start -->
+                <h1 class="lg:text-5xl md:text-4xl text-3xl text-white font-bold">
+                    About Berk Selvi
+                </h1>
+                <!-- Title end -->
+            </div>
+        </div>
+    </section>
+    <!-- Header end -->
+
+    <!-- About content start -->
+    <section class="w-full">
+        <div class="md:py-20 py-12 mx-auto blog-post">
+            <div class="grid grid-cols-12">
+                <div class="lg:col-span-6 col-span-12 m-4 mx-auto">
+                    <img src="./assets/img/pic2.jpg" alt="" class="h-96 w-96 object-cover object-center rounded-md">
+                </div>
+                <div class="lg:col-span-6 col-span-12 m-4 p-5 text-lg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, ad! Consequatur, expedita.
+                        Inventore
+                        rerum similique deleniti facilis aperiam omnis porro. Nobis soluta reiciendis asperiores aut
+                        quibusdam sapiente eum sunt doloribus nostrum voluptas aperiam debitis veniam ipsa cumque odio
+                        dicta, totam, nemo unde facilis neque. Suscipit maiores quod asperiores porro in, distinctio,
+                    </p>
+                    <ul class="list-disc list-inside mt-4">
+                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                        <li>Aliquam tincidunt mauris eu risus.</li>
+                        <li>Vestibulum auctor dapibus neque.</li>
+                        <li>Nunc dignissim risus id metus.</li>
+                        <li>Integer vitae libero ac risus egestas placerat.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-lg p-5 m-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sequi at vero cumque quas consequuntur
+                    porro non, optio aliquid perspiciatis facere nemo, distinctio doloribus nesciunt. Ipsa iusto vel
+                    consequatur sed ea beatae minus aperiam totam architecto cum fugiat accusantium quis voluptas soluta
+                    odio maxime, illo sequi laboriosam repellat. Iste nesciunt incidunt esse officia qui ut ex adipisci
+                    obcaecati. Quisquam expedita cupiditate commodi numquam temporibus doloremque aliquam est ipsam
+                    eligendi velit a, quo voluptatum explicabo?</p>
+            </div>
+        </div>
+    </section>
+    <!-- About content start -->
+
+    <section>
+        <div class="md:py-14 py-6 pb-10 mx-auto blog-post text-center">
+            <h2 class="lg:text-5xl md:text-4xl text-3xl font-semibold">Contact</h2>
+            <div class="mt-8">
+                <a href="#" class="lg:text-3xl md:text-2xl text-xl hover:underline">berkslv@gmail.com</a>
+            </div>
+            <div class="flex justify-center mt-5">
+
+                <!-- Twitter icon start -->
+                <a href="#" class="p-2 bg-red-100 hover:bg-red-200 rounded-md m-2">
+                    <svg class="w-8 h-8 text-red-700" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
+                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                        </path>
+                    </svg>
+                </a>
+                <!-- Twitter icon end -->
+
+                <!-- Instagram icon start -->
+                <a href="#" class="p-2 bg-red-100 hover:bg-red-200 rounded-md m-2">
+                    <svg class="w-8 h-8 text-red-700" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
+                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                        </path>
+                    </svg>
+                </a>
+                <!-- Instagram icon end -->
+
+                <!-- Youtube icon start -->
+                <a href="#" class="p-2 bg-red-100 hover:bg-red-200 rounded-md m-2">
+                    <svg class="w-8 h-8 text-red-700" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube"
+                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path fill="currentColor"
+                            d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                        </path>
+                    </svg>
+                </a>
+                <!-- Youtube icon end -->
+
+                <!-- Tiktok icon start -->
+                <a href="#" class="p-2 bg-red-100 hover:bg-red-200 rounded-md m-2">
+                    <svg class="w-8 h-8 text-red-700" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="tiktok"
+                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z">
+                        </path>
+                    </svg>
+                </a>
+                <!-- Tiktok icon end -->
+
+                <!-- Facebook icon start -->
+                <a href="#" class="p-2 bg-red-100 hover:bg-red-200 rounded-md m-2">
+                    <svg class="w-8 h-8 text-red-700" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
+                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path fill="currentColor"
+                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                        </path>
+                    </svg>
+                </a>
+                <!-- Facebook icon end -->
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer start -->
+    <footer class="w-full bg-indigo-900">
+        <div class="p-8 text-white font-semibold">
+            <h3>Berk Selvi © 2021</h3>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
