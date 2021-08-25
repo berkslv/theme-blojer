@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blojer</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- Search start -->
+    <section id="search-section" class="w-screen px-32 overflow-hidden bg-gray-600 flex justify-center items-center">
+        <div class="relative rounded-md p-10 m-4 bg-gray-200 text-center">
+            <button class="absolute top-4 left-4 hover:text-gray-500" id="search-btn-cancel">
+                <!-- Times ( x ) icon start -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                <!-- Times ( x ) icon end -->
+            </button>
+            <h1 class="font-semibold text-lg">Search</h1>
+            <input type="text" placeholder="Search something" class="mt-5 mx-2 px-8 py-3 rounded-md bg-white">
+            <button class="px-8 py-3 mt-5 mx-2 bg-indigo-600 text-indigo-100 rounded-md">Go!</button>
+        </div>
+    </section>
+    <!-- Search end -->
+
+
+    <!-- Nav start -->
+    <nav id="main-nav"
+        class="relative overflow-hidden w-screen bg-indigo-900 flex justify-between md:items-center items-start md:pt-0 pt-7 md:px-20 px-10">
+        <!-- Navbar trade start -->
+        <div class="font-bold md:text-2xl text-xl text-white hover:text-gray-200 hover:underline">
+            <a href="#">
+                Berk Selvi
+            </a>
+        </div>
+        <!-- Navbar trade end -->
+        <!-- Main navbar menu start -->
+        <ul class="absolute top-20 md:static md:flex md:flex-row">
+            <li class="md:px-3 px-2 md:py-0 py-3 text-xl text-red-300 hover:text-red-400">
+                <a href="./index.html">
+                    Articles
+                </a>
+            </li>
+            <li class="md:px-3 px-2 md:py-0 py-3 text-xl text-red-300 hover:text-red-400">
+                <a href="./personal.html">
+                    Personal
+                </a>
+            </li>
+            <li
+                class="md:px-3 px-2 md:text-xl text-lg text-red-300 hover:text-red-600 rounded-full md:flex hidden justify-center items-center">
+                <a href="#" id="search-btn-1">
+                    <!-- Search icon start -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <!-- Search icon end -->
+                </a>
+            </li>
+        </ul>
+        <!-- Main navbar menu end -->
+
+        <!-- Mobile - responsive navbar menu start -->
+        <ul class="flex flex-row md:hidden">
+            <li
+                class="px-4 md:text-xl text-lg text-red-300 hover:text-red-600 rounded-full flex justify-center items-center">
+                <a href="#" id="search-btn-2">
+                    <!-- Search icon start -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <!-- Search icon end -->
+                </a>
+            </li>
+            <li
+                class="px-4 md:text-xl text-lg text-red-300 hover:text-red-600 rounded-full flex justify-center items-center">
+                <butotn id="menu-button">
+                    <!-- Menu icon start -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <!-- Menu icon end -->
+                </butotn>
+            </li>
+        </ul>
+        <!-- Mobile - responsive navbar menu end -->
+    </nav>
+    <!-- Nav end -->
+
+
+    <section>
+        <div class="w-screen h-screen bg-red-100 flex justify-center items-center flex-col">
+            <h1 class="lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-mono">404!</h1>
+            <h2 class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl mt-5 text-gray-700">Are you lost?</h2>
+            <a href="./index.html" class="px-6 py-4 md:text-2xl text-xl bg-indigo-700 mt-6 border-2 border-black text-indigo-50">Go home</a>
+        </div>
+    </section>
+
+
+    <!-- Footer start -->
+    <footer class="w-full bg-indigo-900">
+        <div class="p-8 text-white font-semibold">
+            <h3>Berk Selvi © 2021</h3>
+        </div>
+    </footer>
+    <!-- Footer end -->
+    
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
