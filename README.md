@@ -15,6 +15,10 @@ WordPress theme with ready-to-use and modern design. You can freely use it in yo
 - VanillaJS
 
 <h2 align="center">
+  <a href="https://berkslv.github.io/theme-blojer/" target="_blank">Visit Website</a>
+</h2>
+
+<h2 align="center">
   Screenshots
 </h2>
 
