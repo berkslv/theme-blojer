@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blojer</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- Search start -->
+    <section id="search-section" class="w-screen overflow-hidden px-8 bg-gray-600 flex justify-center items-center">
+        <div class="rounded-md p-7 bg-gray-200 text-center">
+            <h1 class="font-semibold text-lg mb-2">Search</h1>
+            <form role="search" method="get" class="search-form">
+                <input type="text" placeholder="Search something" class="mr-3 px-8 py-3 rounded-md bg-white">
+                <button type="submit" class="px-8 py-3 mt-5 mx-2 bg-indigo-600 text-indigo-100 rounded-md">Go!</button>
+            </form>
+            <button id="search-btn-cancel"
+                class="px-10 py-2 mt-5 mx-2 bg-red-400 text-red-100 rounded-md">Cancel</button>
+        </div>
+    </section>
+    <!-- Search end -->
+
+
+
+    <!-- Nav start -->
+    <nav id="main-nav"
+        class="relative overflow-hidden w-screen bg-indigo-900 flex justify-between md:items-center items-start md:pt-0 pt-7 md:px-20 px-10">
+        <!-- Navbar trade start -->
+        <div class="font-bold md:text-2xl text-xl text-white hover:text-gray-200 hover:underline">
+            <a href="#">
+                Blojer Lee
+            </a>
+        </div>
+        <!-- Navbar trade end -->
+        <!-- Main navbar menu start -->
+        <ul class="absolute top-20 md:static md:flex md:flex-row">
+            <li class="md:px-3 px-2 md:py-0 py-3 text-xl text-red-300 hover:text-red-400">
+                <a href="./index.html">
+                    Berk Selvi
+                </a>
+            </li>
+            <li class="md:px-3 px-2 md:py-0 py-3 text-xl text-red-300 hover:text-red-400">
+                <a href="./personal.html">
+                    Blog
+                </a>
+            </li>
+            <li
+                class="md:px-3 px-2 md:text-xl text-lg text-red-300 hover:text-red-600 rounded-full md:flex hidden justify-center items-center">
+                <a href="#" id="search-btn-1">
+                    <!-- Search icon start -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <!-- Search icon end -->
+                </a>
+            </li>
+        </ul>
+        <!-- Main navbar menu end -->
+
+        <!-- Mobile - responsive navbar menu start -->
+        <ul class="flex flex-row md:hidden">
+            <li
+                class="px-4 md:text-xl text-lg text-red-300 hover:text-red-600 rounded-full flex justify-center items-center">
+                <a href="#" id="search-btn-2">
+                    <!-- Search icon start -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <!-- Search icon end -->
+                </a>
+            </li>
+            <li
+                class="px-4 md:text-xl text-lg text-red-300 hover:text-red-600 rounded-full flex justify-center items-center">
+                <butotn id="menu-button">
+                    <!-- Menu icon start -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <!-- Menu icon end -->
+                </butotn>
+            </li>
+        </ul>
+        <!-- Mobile - responsive navbar menu end -->
+    </nav>
+    <!-- Nav end -->
+
+    <!-- Blog start -->
+    <section>
+        <!-- Header start -->
+        <div class="text-center w-full bg-indigo-900 py-12">
+            <!-- Categories start -->
+            <div class="md:text-lg text-base font-semibold mb-4">
+                <h3 class="inline px-3 underline">
+                    <a href="#" class="text-red-400 hover:text-red-500">
+                        Science
+                    </a>
+                </h3>
+                <h3 class="inline px-3 underline">
+                    <a href="#" class="text-red-400 hover:text-red-500">
+                        Life
+                    </a>
+                </h3>
+            </div>
+            <!-- Categories end -->
+            <!-- Title start -->
+            <h1 class="lg:text-4xl md:text-3xl text-2xl font-bold hover:underline text-white">
+                <a href="./single.html">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, illo.
+                </a>
+            </h1>
+            <!-- Title end -->
+            <!-- Date start -->
+            <div class="mt-3 flex justify-center items-center font-semibold text-gray-300">
+                <!-- Date icon start -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="md:h-5 h-4 md:w-5 w-4 mr-1" viewBox="0 0 24 24"
+                    fill="#6B7280">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path
+                        d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V9h14v10zm0-12H5V5h14v2zM7 11h5v5H7z" />
+                </svg>
+                <!-- Date icon end -->
+                <a href="#" class="hover:underline md:text-base text-sm">
+                    <time>17 July 2021</time>
+                </a>
+            </div>
+            <!-- Date end -->
+        </div>
+        <!-- Header end -->
+        <div class="md:py-20 py-12 mx-auto blog-post">
+            <!-- Header image start -->
+            <div class="mt-3">
+                <img src="./assets/img/pic5.jpg" alt="blog image" class="mx-auto object-cover object-center"
+                    id="blog-image">
+            </div>
+            <!-- Header image end -->
+            <!-- Content preview start -->
+            <div class="md:px-10 px-3 md:py-16 py-10 text-lg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maiores blanditiis nihil debitis eius?
+                    Vero mollitia nisi nesciunt explicabo debitis minima consectetur eius omnis beatae consequatur.
+                    Optio ut possimus repudiandae.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, optio quas non aperiam tempora
+                    earum quis voluptates voluptatem ipsa alias deserunt!</p>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo amet vero autem veritatis impedit
+                    doloribus quo, magnam repellat, animi ullam, hic earum omnis maiores fugit ipsam id quidem provident
+                    aut molestiae. Similique eaque alias illum at suscipit. Iure blanditiis ratione possimus
+                    exercitationem aspernatur minus, doloribus perspiciatis, molestias adipisci libero, minima atque
+                    voluptatem inventore ad officia tenetur autem? Explicabo, numquam beatae.</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, delectus dignissimos dolores rerum
+                    ipsa neque!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maiores blanditiis nihil debitis eius?
+                    Vero mollitia nisi nesciunt explicabo debitis minima consectetur eius omnis beatae consequatur.
+                    Optio ut possimus repudiandae.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, optio quas non aperiam tempora
+                    earum quis voluptates voluptatem ipsa alias deserunt!</p>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo amet vero autem veritatis impedit
+                    doloribus quo, magnam repellat, animi ullam, hic earum omnis maiores fugit ipsam id quidem provident
+                    aut molestiae. Similique eaque alias illum at suscipit. Iure blanditiis ratione possimus
+                    exercitationem aspernatur minus, doloribus perspiciatis, molestias adipisci libero, minima atque
+                    voluptatem inventore ad officia tenetur autem? Explicabo, numquam beatae.</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, delectus dignissimos dolores rerum
+                    ipsa neque!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maiores blanditiis nihil debitis eius?
+                    Vero mollitia nisi nesciunt explicabo debitis minima consectetur eius omnis beatae consequatur.
+                    Optio ut possimus repudiandae.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, optio quas non aperiam tempora
+                    earum quis voluptates voluptatem ipsa alias deserunt!</p>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo amet vero autem veritatis impedit
+                    doloribus quo, magnam repellat, animi ullam, hic earum omnis maiores fugit ipsam id quidem provident
+                    aut molestiae. Similique eaque alias illum at suscipit. Iure blanditiis ratione possimus
+                    exercitationem aspernatur minus, doloribus perspiciatis, molestias adipisci libero, minima atque
+                    voluptatem inventore ad officia tenetur autem? Explicabo, numquam beatae.</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, delectus dignissimos dolores rerum
+                    ipsa neque!</p>
+            </div>
+            <!-- Content preview end -->
+        </div>
+    </section>
+    <!-- Blog end -->
+
+    <!-- Divider start -->
+    <div class="mx-auto h-0.5 bg-gray-200 flex justify-center items-center" style="width: 80vw;">
+        <span class="text-gray-300 text-lg">//</span>
+    </div>
+    <!-- Divider end -->
+
+    <!-- Comments start -->
+    <section class="py-20">
+        <!-- Comments header start -->
+        <div class="text-center mt-12 mb-6">
+            <h3 class="lg:text-5xl md:text-4xl text-3xl font-bold">Comments</h3>
+        </div>
+        <!-- Comments header end -->
+        <!-- Comments container start -->
+        <div class="flex justify-center">
+            <div class="w-6/12">
+                <!-- Single comment start -->
+                <div class="py-5">
+                    <!-- Header start -->
+                    <div class="flex justify-between items-start">
+                        <div class="flex">
+                            <!-- Profile pic start -->
+                            <picture>
+                                <img src="./assets/img/pic1.jpg" alt="author picture" class="w-14 h-14">
+                            </picture>
+                            <!-- Profile pic end -->
+                            <!-- Author info start -->
+                            <div class="ml-3">
+                                <h4 class="font-bold">Author Lee</h4>
+                                <time>17 Fab 2021, 14:53</time>
+                            </div>
+                            <!-- Author info end -->
+                        </div>
+                        <!-- Answer control start -->
+                        <div class="mt-3 text-right">
+                            <a href="#"
+                                class="px-3 py-2 bg-indigo-100 text-indigo-800 rounded-md hover:bg-indigo-200">Answer</a>
+                        </div>
+                        <!-- Answer control end -->
+                    </div>
+                    <!-- Header end -->
+                    <!-- Content start -->
+                    <div class="mt-3">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis perferendis dignissimos
+                            autem! Expedita ullam corrupti aspernatur laborum excepturi!</p>
+                    </div>
+                    <!-- Content end -->
+                </div>
+                <!-- Single comment end -->
+                <!-- Single comment start -->
+                <div class="py-5">
+                    <!-- Header start -->
+                    <div class="flex justify-between items-start">
+                        <div class="flex">
+                            <!-- Profile pic start -->
+                            <picture>
+                                <img src="./assets/img/pic1.jpg" alt="author picture" class="w-14 h-14">
+                            </picture>
+                            <!-- Profile pic end -->
+                            <!-- Author info start -->
+                            <div class="ml-3">
+                                <h4 class="font-bold">Author Lee</h4>
+                                <time>17 Fab 2021, 14:53</time>
+                            </div>
+                            <!-- Author info end -->
+                        </div>
+                        <!-- Answer control start -->
+                        <div class="mt-3 text-right">
+                            <a href="#"
+                                class="px-3 py-2 bg-indigo-100 text-indigo-800 rounded-md hover:bg-indigo-200">Answer</a>
+                        </div>
+                        <!-- Answer control end -->
+                    </div>
+                    <!-- Header end -->
+                    <!-- Content start -->
+                    <div class="mt-3">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis perferendis dignissimos
+                            autem! Expedita ullam corrupti aspernatur laborum excepturi!</p>
+                    </div>
+                    <!-- Content end -->
+                </div>
+                <!-- Single comment end -->
+            </div>
+        </div>
+        <!-- Comments container end -->
+    </section>
+    <!-- Comments end -->
+
+
+    <!-- Write comment start -->
+    <section>
+        <div class="py-14 px-4 mx-auto">
+            <div class="flex flex-col text-center w-full mb-6">
+                <h1 class="sm:text-3xl text-2xl font-semibold title-font">Write a comment</h1>
+            </div>
+            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <div class="flex flex-wrap m-2">
+                    <div class="p-2 w-full">
+                        <div class="relative">
+                            <label for="message" class="leading-7 text-sm text-gray-600">Comment*</label>
+                            <textarea id="message" name="message"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                        </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="name" class="leading-7 text-sm text-gray-600">Name*</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="email" class="leading-7 text-sm text-gray-600">Email*</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-full">
+                        <div class="relative">
+                            <label for="name" class="leading-7 text-sm text-gray-600">Website</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-full">
+                        <button
+                            class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Write comment start -->
+
+    <!-- Footer start -->
+    <footer class="w-full bg-indigo-900">
+        <div class="p-8 text-white font-semibold">
+            <h3>Berk Selvi © 2021</h3>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

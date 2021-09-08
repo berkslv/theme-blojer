@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/*----------------------------------------------------------------------- Post --*/
+#blog-image {
+  width: 90vw;
+  max-height: 15rem;
+}
+
+.blog-post {
+  width: 90vw;
+}
+
+/*----------------------------------------------------------------------- Navbar --*/
+#main-nav {
+  height: 5rem;
+  transition: height 1s, transform 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+#search-section {
+  height: 0;
+  transition: height 0.5s, transform 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+.page_item {
+  @apply md:px-3 px-2 md:py-0 py-3 text-xl text-red-300 hover:text-red-400;
+}
+
+.search-icon {
+  @apply md:px-3 px-2 md:text-xl text-lg text-red-300 hover:text-red-600 rounded-full md:flex hidden justify-center items-center;
+}
+
+.menu {
+  @apply absolute top-20 md:static md:flex md:flex-row;
+}
+
+/*----------------------------------------------------------------------- Comment --*/
+
+.comment {
+  @apply border-t border-gray-200;
+}
+
+.comment-reply-link {
+  @apply px-3 py-2 bg-indigo-100 text-indigo-800 rounded-md hover:bg-indigo-200;
+}
+
+.comment-edit-link {
+  @apply px-3 py-2 bg-indigo-100 text-indigo-800 rounded-md hover:bg-indigo-200;
+}
+
+.comment-respond {
+  @apply py-14 px-4 mx-auto;
+}
+
+.child-comments {
+  @apply ml-10 py-4;
+}
+
+.comment-reply-title {
+  @apply sm:text-3xl text-2xl font-semibold;
+}
+
+.comment-form input {
+  @apply w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out;
+}
+
+.comment-form textarea {
+  @apply w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out;
+}
+
+.comment-form {
+  @apply flex flex-wrap m-2;
+}
+
+.comment-form label{
+  @apply leading-7 text-sm text-gray-600;
+}
+
+.comment-notes {
+  @apply leading-7 text-sm text-gray-600 mx-auto;
+}
+
+.comment-respond {
+  @apply lg:w-1/2 md:w-2/3 mx-auto;
+}
+
+.comment-form-comment {
+  @apply py-2 w-full text-left;
+}
+
+.comment-form-author {
+  @apply py-2 pr-2 w-1/2 text-left;
+}
+
+.comment-form-email {
+  @apply py-2 pl-2 w-1/2 text-left;
+}
+
+.comment-form-url {
+  @apply py-2 w-full text-left;
+} 
+
+.comment-form-cookies-consent {
+  @apply w-full flex px-3;
+}
+
+#wp-comment-cookies-consent {
+  @apply flex w-auto mr-3; 
+}
+
+.form-submit {
+  @apply p-2 mx-auto;
+}
+
+.form-submit input {
+  @apply flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 mt-4 focus:outline-none hover:bg-indigo-600 rounded text-lg;
+}
+
+.logged-in-as {
+  @apply mx-auto p-2 hover:underline hover:text-indigo-500 font-medium text-indigo-400 cursor-pointer;
+}
+
+.pagination-anchors a {
+  @apply text-indigo-500 hover:text-indigo-700 underline font-semibold;
+}
+
+/*----------------------------------------------------------------------- Responsive --*/
+
+@media (min-width: 640px) {
+  #blog-image {
+    width: 90vw;
+    max-height: 20rem;
+  }
+
+  .blog-post {
+    width: 90vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  #blog-image {
+    width: 80vw;
+    max-height: 30rem;
+  }
+
+  .blog-post {
+    width: 80vw;
+  }
+}
+
+@media (min-width: 1280px) {
+  #blog-image {
+    width: 75vw;
+    max-height: 40rem;
+  }
+
+  .blog-post {
+    width: 70vw;
+  }
+}

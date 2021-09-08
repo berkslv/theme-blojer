@@ -1,0 +1,62 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/*----------------------------------------------------------------------- Post --*/
+#blog-image {
+  width: 90vw;
+  max-height: 15rem;
+}
+
+.blog-post {
+  width: 90vw;
+}
+
+/*----------------------------------------------------------------------- Navbar --*/
+#main-nav {
+  height: 5rem;
+  transition: height 1s, transform 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+#search-section {
+  height: 0;
+  transition: height 0.5s, transform 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+/*----------------------------------------------------------------------- Responsive --*/
+
+@media (min-width: 640px) {
+  #blog-image {
+    width: 90vw;
+    max-height: 20rem;
+  }
+
+  .blog-post {
+    width: 90vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  #blog-image {
+    width: 80vw;
+    max-height: 30rem;
+  }
+
+  .blog-post {
+    width: 80vw;
+  }
+}
+
+@media (min-width: 1280px) {
+  #blog-image {
+    width: 75vw;
+    max-height: 40rem;
+  }
+
+  .blog-post {
+    width: 70vw;
+  }
+}

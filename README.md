@@ -1,5 +1,12 @@
-# BLOJER minimalistic & modern blog theme
+# Blojer - WordPress Blog Theme
 
-- Minimalistic but great design.
-- Moden blogs and search functionalities.
-- Built with Tailwind CSS
+WordPress theme with ready-to-use and modern design. You can freely use it in your projects. If you need something special about wordpress themes or special support, send me an [email](mailto:berkslv@gmail.com). If you have any questions you can visit my [website](https://berkslv.github.io).
+
+What's inside?
+- About me & Blogs page
+- Search functionalities
+- One-column design.
+- Built with tailwindCSS
+- VanillaJS
+
+
